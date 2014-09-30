@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A343f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="URu-Vr-tIM">
     <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Stcky CollectionHeader-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
@@ -15,13 +17,67 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JCP-hD-tNM">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.74041326839999999" green="0.56926496010000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="bZs-R2-9S2" customClass="StickyHeaderFlowLayout">
+                                    <size key="itemSize" width="116" height="103"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="5" minY="5" maxX="5" maxY="5"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionCell" id="eSE-An-tkD" customClass="CollectionViewCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="116" height="103"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xcX-vk-nRl">
+                                                    <rect key="frame" x="0.0" y="0.0" width="116" height="103"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" red="0.28980698069999999" green="0.547170928" blue="0.2146756152" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="centerY" secondItem="xcX-vk-nRl" secondAttribute="centerY" id="MkT-ao-1dh"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="xcX-vk-nRl" secondAttribute="bottom" constant="-8" id="URx-59-sC5"/>
+                                            <constraint firstAttribute="centerX" secondItem="xcX-vk-nRl" secondAttribute="centerX" id="WP1-zV-bJY"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="xcX-vk-nRl" secondAttribute="trailing" constant="-8" id="fz0-fK-Hw4"/>
+                                            <constraint firstItem="xcX-vk-nRl" firstAttribute="top" secondItem="eSE-An-tkD" secondAttribute="topMargin" constant="-8" id="ude-vY-ER0"/>
+                                            <constraint firstItem="xcX-vk-nRl" firstAttribute="leading" secondItem="eSE-An-tkD" secondAttribute="leadingMargin" constant="-8" id="vbY-8m-mfF"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StickyheaderView" id="z1b-FO-GIk" customClass="StickyCollectionReusableView">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </collectionReusableView>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="JCP-hD-tNM" secondAttribute="centerX" id="E2O-kF-vtW"/>
+                            <constraint firstAttribute="trailing" secondItem="JCP-hD-tNM" secondAttribute="trailing" id="Ube-jR-lIU"/>
+                            <constraint firstItem="JCP-hD-tNM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="iis-ew-3lG"/>
+                            <constraint firstAttribute="centerY" secondItem="JCP-hD-tNM" secondAttribute="centerY" id="ofX-78-6I6"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="JCP-hD-tNM" secondAttribute="bottom" id="srM-2L-gLf"/>
+                            <constraint firstItem="JCP-hD-tNM" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-64" id="tfe-Mt-ko3"/>
+                            <constraint firstAttribute="width" secondItem="JCP-hD-tNM" secondAttribute="width" id="u8I-pH-BUV"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="D7g-43-9Tf"/>
+                    <navigationItem key="navigationItem" title="Stcky CollectionHeader" id="D7g-43-9Tf"/>
+                    <connections>
+                        <outlet property="StickCollectionView" destination="JCP-hD-tNM" id="ywD-DM-UeR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="665" y="354"/>
+            <point key="canvasLocation" x="770" y="354"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xNJ-57-aMO">
@@ -42,6 +98,9 @@
             <point key="canvasLocation" x="133" y="354"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="image3.jpg" width="700" height="340"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
