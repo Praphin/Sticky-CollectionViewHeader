@@ -16,8 +16,8 @@
 		71E9354019DAE64000F20681 /* StckyUICollectionHeaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E9353F19DAE64000F20681 /* StckyUICollectionHeaderTests.m */; };
 		71E9354B19DAE9C200F20681 /* StickyCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E9354A19DAE9C200F20681 /* StickyCollectionReusableView.m */; };
 		71E9354E19DAE9D600F20681 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E9354D19DAE9D600F20681 /* CollectionViewCell.m */; };
-		71E9355219DAEE3100F20681 /* StickyHeaderFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E9355119DAEE3100F20681 /* StickyHeaderFlowLayout.m */; };
 		71E9355419DAF03A00F20681 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 71E9355319DAF03A00F20681 /* image3.jpg */; };
+		71E9355719DAF18000F20681 /* StickyFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E9355619DAF18000F20681 /* StickyFlow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,9 +48,9 @@
 		71E9354A19DAE9C200F20681 /* StickyCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StickyCollectionReusableView.m; sourceTree = "<group>"; };
 		71E9354C19DAE9D600F20681 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		71E9354D19DAE9D600F20681 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
-		71E9355019DAEE3100F20681 /* StickyHeaderFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StickyHeaderFlowLayout.h; sourceTree = "<group>"; };
-		71E9355119DAEE3100F20681 /* StickyHeaderFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StickyHeaderFlowLayout.m; sourceTree = "<group>"; };
 		71E9355319DAF03A00F20681 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
+		71E9355519DAF18000F20681 /* StickyFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StickyFlow.h; sourceTree = "<group>"; };
+		71E9355619DAF18000F20681 /* StickyFlow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StickyFlow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,8 +139,8 @@
 		71E9354F19DAEE3100F20681 /* Sticky Header */ = {
 			isa = PBXGroup;
 			children = (
-				71E9355019DAEE3100F20681 /* StickyHeaderFlowLayout.h */,
-				71E9355119DAEE3100F20681 /* StickyHeaderFlowLayout.m */,
+				71E9355519DAF18000F20681 /* StickyFlow.h */,
+				71E9355619DAF18000F20681 /* StickyFlow.m */,
 			);
 			path = "Sticky Header";
 			sourceTree = "<group>";
@@ -246,8 +246,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71E9355719DAF18000F20681 /* StickyFlow.m in Sources */,
 				71E9352C19DAE64000F20681 /* ViewController.m in Sources */,
-				71E9355219DAEE3100F20681 /* StickyHeaderFlowLayout.m in Sources */,
 				71E9354E19DAE9D600F20681 /* CollectionViewCell.m in Sources */,
 				71E9352919DAE64000F20681 /* AppDelegate.m in Sources */,
 				71E9354B19DAE9C200F20681 /* StickyCollectionReusableView.m in Sources */,

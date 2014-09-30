@@ -1,9 +1,14 @@
+//
+//  StickyFlow.m
+//  StckyUICollectionHeader
+//
+//  Created by Praphin SP on 30/09/14.
+//  Copyright (c) 2014 Praphin SP. All rights reserved.
+//
 
-#import "StickyHeaderFlowLayout.h"
+#import "StickyFlow.h"
 
-@implementation StickyHeaderFlowLayout
-
-
+@implementation StickyFlow
 - (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect {
     NSMutableArray *answer = [[super layoutAttributesForElementsInRect:rect] mutableCopy];
     UICollectionView * const cv = self.collectionView;
