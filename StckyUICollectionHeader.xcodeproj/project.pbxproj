@@ -14,6 +14,10 @@
 		71E9353119DAE64000F20681 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71E9353019DAE64000F20681 /* Images.xcassets */; };
 		71E9353419DAE64000F20681 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71E9353219DAE64000F20681 /* LaunchScreen.xib */; };
 		71E9354019DAE64000F20681 /* StckyUICollectionHeaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E9353F19DAE64000F20681 /* StckyUICollectionHeaderTests.m */; };
+		71E9354B19DAE9C200F20681 /* StickyCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E9354A19DAE9C200F20681 /* StickyCollectionReusableView.m */; };
+		71E9354E19DAE9D600F20681 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E9354D19DAE9D600F20681 /* CollectionViewCell.m */; };
+		71E9355419DAF03A00F20681 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 71E9355319DAF03A00F20681 /* image3.jpg */; };
+		71E9355719DAF18000F20681 /* StickyFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E9355619DAF18000F20681 /* StickyFlow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,13 @@
 		71E9353919DAE64000F20681 /* StckyUICollectionHeaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StckyUICollectionHeaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71E9353E19DAE64000F20681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71E9353F19DAE64000F20681 /* StckyUICollectionHeaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StckyUICollectionHeaderTests.m; sourceTree = "<group>"; };
+		71E9354919DAE9C200F20681 /* StickyCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StickyCollectionReusableView.h; sourceTree = "<group>"; };
+		71E9354A19DAE9C200F20681 /* StickyCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StickyCollectionReusableView.m; sourceTree = "<group>"; };
+		71E9354C19DAE9D600F20681 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		71E9354D19DAE9D600F20681 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		71E9355319DAF03A00F20681 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
+		71E9355519DAF18000F20681 /* StickyFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StickyFlow.h; sourceTree = "<group>"; };
+		71E9355619DAF18000F20681 /* StickyFlow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StickyFlow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +96,12 @@
 				71E9352819DAE64000F20681 /* AppDelegate.m */,
 				71E9352A19DAE64000F20681 /* ViewController.h */,
 				71E9352B19DAE64000F20681 /* ViewController.m */,
+				71E9354919DAE9C200F20681 /* StickyCollectionReusableView.h */,
+				71E9354A19DAE9C200F20681 /* StickyCollectionReusableView.m */,
+				71E9354C19DAE9D600F20681 /* CollectionViewCell.h */,
+				71E9354D19DAE9D600F20681 /* CollectionViewCell.m */,
+				71E9355319DAF03A00F20681 /* image3.jpg */,
+				71E9354F19DAEE3100F20681 /* Sticky Header */,
 				71E9352D19DAE64000F20681 /* Main.storyboard */,
 				71E9353019DAE64000F20681 /* Images.xcassets */,
 				71E9353219DAE64000F20681 /* LaunchScreen.xib */,
@@ -117,6 +134,15 @@
 				71E9353E19DAE64000F20681 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		71E9354F19DAEE3100F20681 /* Sticky Header */ = {
+			isa = PBXGroup;
+			children = (
+				71E9355519DAF18000F20681 /* StickyFlow.h */,
+				71E9355619DAF18000F20681 /* StickyFlow.m */,
+			);
+			path = "Sticky Header";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +228,7 @@
 				71E9352F19DAE64000F20681 /* Main.storyboard in Resources */,
 				71E9353419DAE64000F20681 /* LaunchScreen.xib in Resources */,
 				71E9353119DAE64000F20681 /* Images.xcassets in Resources */,
+				71E9355419DAF03A00F20681 /* image3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,8 +246,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71E9355719DAF18000F20681 /* StickyFlow.m in Sources */,
 				71E9352C19DAE64000F20681 /* ViewController.m in Sources */,
+				71E9354E19DAE9D600F20681 /* CollectionViewCell.m in Sources */,
 				71E9352919DAE64000F20681 /* AppDelegate.m in Sources */,
+				71E9354B19DAE9C200F20681 /* StickyCollectionReusableView.m in Sources */,
 				71E9352619DAE64000F20681 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,7 +327,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -332,7 +362,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -344,6 +374,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StckyUICollectionHeader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +385,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StckyUICollectionHeader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
